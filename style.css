@@ -1,0 +1,70 @@
+html {
+    font-family: 'Tilt Warp';
+    font-size: 1rem;
+    background-image: url("https://images.unsplash.com/photo-1597839219216-a773cb2473e4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body {
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+h1 {
+    color: aliceblue;
+    letter-spacing: 5px;
+}
+.clock {
+    display: flex;
+    margin: 5px;
+    margin-bottom: 5%;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 200px;
+    margin: 5px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #f0f8ffcc;
+}
+.card .hours , .minutes, .seconds{
+    display: flex;
+    height: 200px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+.card .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #516d88;
+    width: 120px;
+    height: 120px;
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 576px){
+    .card {
+        width: 150px;
+        height: 300px;
+        margin: 25px;
+    }
+    .card .hours , .minutes, .seconds {
+        width: 150px;
+        height: 300px;
+        font-size: 6rem;
+    }
+    .card .text {
+        width: 150px;
+    }
+}
